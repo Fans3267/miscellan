@@ -125,7 +125,7 @@ bool mazeproblem::findpath_method1(int len, int wid) {
         int y=current.y;
         //ends
         if (x==len-1 && y==wid-1) {
-            cout<<"\n"<<"直角方法: "<<path.size()<<"點\n";
+            cout<<"\n"<<"90 Degree Solution: "<<path.size()<<"Points\n";
             for (int i=path.size();i>0;i--) {
                 cout<<"("<<path[i-1][0]+ 1<<","<<path[i-1][1]+ 1<<")";
                 if (i>1)cout<<"<-";
@@ -176,7 +176,7 @@ void mazeproblem::findpath_method2(int len, int wid) {
         int y=current.y;
         //ends
         if (x==len-1 && y==wid-1) {
-            cout<<endl<<"任意方法: "<<path.size()<<"點\n";
+            cout<<endl<<"Any Degree Solution: "<<path.size()<<"Points\n";
             for (int i=path.size();i>0;i--) {
                 cout<<"("<<path[i-1][0]+ 1<<","<<path[i-1][1]+ 1<<")";
                 if (i>1)cout<<"<-";
@@ -205,10 +205,11 @@ void mazeproblem::findpath_method2(int len, int wid) {
             }
         }
     }
-    cout<<endl<<"沒路\n\n";
+    cout<<endl<<"Ain't no wayyyy\n\n";
 }
+
 int main(){
-    cout<<"(Paste And Enter) Input:\n";
+    cout<<"(Paste And Press Enter):\n";
     int amount=0,len=0,wid=0;
     cin>>amount;
 
@@ -219,6 +220,7 @@ int main(){
         if (!maze.findpath_method1(len,wid))
             maze.findpath_method2(len,wid);
     }
+    system("PAUSE");
 }
 
 
