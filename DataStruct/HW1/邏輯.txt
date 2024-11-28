@@ -19,4 +19,8 @@ mode=最後輸出的是不是直角(0直角 1隨意方向 2無法到達終點)
 
 12:10am
 需要struct next step?
-還是用回朔的方式?
+還是用純回推的方式?
+
+11/28
+dead ahh i forgor to note this
+whatever
